@@ -1,0 +1,156 @@
+
+/* hover color */
+.yellow-hover-link{
+    text-decoration: none;
+    color: black;
+}
+.yellow-hover-link:hover{
+    color:rgb(255, 213, 0);
+    
+
+}
+.yellow-hover-footer{
+    text-decoration: none;
+    color: rgb(152, 152, 152);
+}
+.yellow-hover-footer:hover{
+    color:rgb(255, 213, 0);
+    
+
+}
+
+/* header */
+
+header{
+    position: relative;
+    height: 500px;
+}
+.container-xl{
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+}
+.container-main{
+    width: 1340px;
+}
+
+.logo{
+    text-decoration: none;
+    color: black;
+}
+
+
+.main-content{
+    position:  absolute;
+    width: 44%;
+    left: 6vw;
+    top: 24vh;
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.main-content.reveal{
+    animation: text_reveal 1s;;
+    animation-fill-mode: forwards;
+}
+
+@keyframes text_reveal {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+
+.subtitle{
+    font-size: 14px;
+}
+.floating-box{
+    width: 150px;
+    height: 150px;
+    left: -100px;
+    transform: translateY(30px) rotate(45deg);
+}
+.img-box{
+    position: absolute;
+    width: 50%;
+    height: 350px;
+    top: 140px;
+    right: -10%;
+    background-size: 150%;
+    background-position: center;
+    background-color: #ccc;
+    opacity: 0;
+    filter: blur(5px);
+}
+
+.img-box.animate{
+    animation: scale-down 0.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scale-down {
+    to{
+        opacity: 1;
+        filter: blur(0);
+        background-size: 100%;
+    }
+}
+
+
+header .img-box{
+    width: 55%;
+    background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/803.jpg');
+}
+
+/* info */
+
+.steps{
+    padding-top: 60px;
+    height: 500px;
+}
+.info{
+    position: relative;
+    padding: 40px 0;
+    height: 400px;
+}
+
+/* first info */
+
+.info .main-content{
+    top: 50px;
+    left: auto;
+    right: 100px;
+}
+.info .img-box{
+    right: auto;
+    left: -10%;
+    top: 0;
+}
+.first-info .img-box{
+    
+    background-image: url('https://wallpaperaccess.com/full/1465186.jpg');
+}
+
+/* second info  */
+.second-info .main-content{
+    left: 50px;
+    right: auto;
+}
+.second-info .img-box{
+    left: auto;
+    right: -10%;
+    top: 0;
+    background-image: url('https://stimg.cardekho.com/images/carexteriorimages/930x620/Lamborghini/Urus/4418/Lamborghini-Urus-V8/1621927166506/front-left-side-47.jpg?tr=w-375');
+}
+
+/* banner */
+
+.banner-img{
+    height: 500px;
+    background-color: #ccc;
+    background-size: 100%;
+    background-position: center;
+    background-image: url('https://www.supercars.net/blog/wp-content/uploads/2020/10/2019-Lamborghini-Urus-011-2160-scaled-1.jpg');
+    
+}
